@@ -46,9 +46,7 @@ A ideia do projeto é funcionar como um **assistente físico de hábitos saudáv
 
 ## Arquitetura do Projeto
 
-<img width="744" height="1602" alt="ArquiteturaSprint drawio" src="https://github.com/user-attachments/assets/e25951a5-410f-45a3-b91c-83fa6aad8f47" />
-
-
+<img width="1640" height="2992" alt="health-plus-arquitetura" src="https://github.com/user-attachments/assets/ce134a07-8591-450b-ac17-29d727643b0d" />
 
 ---
 
