@@ -40,7 +40,7 @@ A ideia do projeto é funcionar como um **assistente físico de hábitos saudáv
 ### Foto da Simulação
 <img width="503" height="412" alt="image" src="https://github.com/user-attachments/assets/ac0ad157-1c6f-4998-899e-acd925b1cc72" />
 
-#### Link da simulação: https://wokwi.com/projects/462495996135387137
+#### Link da simulação: [https://wokwi.com/projects/462495996135387137](https://wokwi.com/projects/462601656407050241)
 
 ---
 
