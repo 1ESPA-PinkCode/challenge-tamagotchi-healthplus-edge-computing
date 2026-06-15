@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Plus Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Health Plus</p>
+        <h1>Histórico do Chaveiro Inteligente</h1>
+        <p class="subtitle">Dashboard conectado aos dados reais da VM FIWARE.</p>
+      </div>
+      <div class="device-status" id="connectionStatus">Conectando...</div>
+    </header>
+
+    <section class="cards">
+      <article class="card">
+        <span>Passos atuais</span>
+        <strong id="currentSteps">--</strong>
+      </article>
+      <article class="card">
+        <span>Progresso da meta</span>
+        <strong id="progressPercent">--%</strong>
+      </article>
+      <article class="card">
+        <span>Estágio da flor</span>
+        <strong id="currentStage">--</strong>
+      </article>
+      <article class="card">
+        <span>Última leitura</span>
+        <strong id="lastUpdate">--</strong>
+      </article>
+    </section>
+
+    <section class="grid">
+      <article class="panel flower-panel">
+        <h2>Flor atual</h2>
+        <div class="flower" id="flowerIcon">🌱</div>
+        <p id="flowerText">Aguardando dados...</p>
+        <div class="progress-bar">
+          <div id="progressFill"></div>
+        </div>
+        <small id="goalText">Meta: 100 passos</small>
+      </article>
+
+      <article class="panel chart-panel">
+        <h2>Histórico de passos</h2>
+        <div class="chart-wrapper">
+          <canvas id="stepsChart"></canvas>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h2>Registros recebidos</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Data/Hora</th>
+              <th>Passos</th>
+              <th>Estágio</th>
+            </tr>
+          </thead>
+          <tbody id="historyTable"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      Dados carregados da VM via backend local Node.js.
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
